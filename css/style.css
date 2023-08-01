@@ -1,0 +1,165 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header
+{
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+}
+header ul
+{
+    display: flex; 
+}
+header ul li
+{
+    padding: 0 0.7rem;
+    list-style: none;
+}
+header li a
+{
+    color: #000;
+    text-decoration: none;
+}
+.asidebar
+{
+    background-color: #fff;
+    width: 300px;
+    height: 100vh;
+    padding: 50px 20px;
+    padding-left: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    transition: all 0.5s ease-out;
+}
+.cross
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.cross i
+{
+    font-size: 1.5rem;
+    /* transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
+}
+.asidebar li
+{
+    padding: 10px 0;
+    list-style: none;
+}
+.asidebar li a
+{
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s;   
+}
+.firstsection,.secondsection,.thirdsection,.fourthsection,.fifthsection,.sixthsection,.seventhsection
+{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.firstsection .top,.secondsection .top,.thirdsection .top,.fourthsection .top,.fifthsection .top,.sixthsection .top,.seventhsection .top
+{
+    padding-top: 7.5rem;
+}
+.firstsection .top h1,.secondsection .top h1,.thirdsection .top h1,.fourthsection .top h1,.fifthsection .top h1,.sixthsection .top h1,.seventhsection .top h1
+{
+    font-size: 3rem;
+    text-align: center;
+}
+.firstsection .top p,.secondsection .top p,.thirdsection .top p,.fourthsection .top p,.fifthsection .top p,.sixthsection .top p,.seventhsection .top p
+{
+    text-align: center;
+}
+.firstsection .bottom .btn,.secondsection .bottom .btn,.thirdsection .bottom .btn,.fourthsection .bottom .btn,.fifthsection .bottom .btn,.sixthsection .bottom .btn,.seventhsection .bottom .btn
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+    padding-left: 1.6rem;
+}
+.firstsection .bottom .b1,.secondsection .bottom .b1,.thirdsection .bottom .b1,.fourthsection .bottom .b1,.fifthsection .bottom .b1,.sixthsection .bottom .b1,.seventhsection .bottom .b1
+{
+    margin: 0.5rem;
+    color: #fff;
+    background-color: #606367;
+    font-size: 0.7rem;
+    padding: 0.8rem 4.5rem;
+    border-radius : 20px;
+    border : none;
+}
+.firstsection .bottom .b2,.secondsection .bottom .b2,.thirdsection .bottom .b2,.fourthsection .bottom .b2,.fifthsection .bottom .b2,.sixthsection .bottom .b2,.seventhsection .bottom .b2
+{
+    margin: 0.5rem;
+    color: #000;
+    background-color: #f8f8f8;
+    font-size: 0.7rem;
+    padding: 0.8rem 4.5rem;
+    border-radius : 20px;
+    border : none;
+
+}
+.firstsection .down,.secondsection .down,.thirdsection .down,.fourthsection .down,.fifthsection .down,.sixthsection .down,.seventhsection .down
+{
+    text-align: center;
+}
+.firstsection i,.secondsection i,.thirdsection i,.fourthsection i,.fifthsection i,.sixthsection i,.seventhsection i
+{
+    color: #fff;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.firstsection
+{
+    background-image: url(../image/model-3.jpg);
+}
+
+.secondsection
+{
+    background-image: url(../image/model-y.jpg);
+}
+
+.thirdsection
+{
+    background-image: url(../image/model-s.jpg);
+}
+
+.fourthsection
+{
+    background-image: url(../image/model-x.jpg);
+}
+
+.fifthsection
+{
+    background-image: url(../image/solar-panel.jpg);
+}
+
+.sixthsection
+{
+    background-image: url(../image/solar-roof.jpg);
+}
+
+.seventhsection
+{
+    background-image: url(../image/accessories.jpg);
+}
