@@ -27,14 +27,14 @@
                 <ul>
                     <li><a href="">Shop</a></li>
                     <li><a href="">Account</a></li>
-                    <li><a href="" onclick="f1()" style="font-weight: 700;">Menu</a></li>
+                    <li><a href="" onclick="openbar()" style="font-weight: 700;">Menu</a></li>
                 </ul>
             </header>
 
-            <ul class="asidebar">
+            <ul class="asidebar" id="side">
             
                 <div class="cross">
-                    <i onclick="f2()" class="fa-solid fa-xmark"></i>
+                    <i onclick="closebar()" class="fa-solid fa-xmark"></i>
                 </div>
 
                 <li><a href="">Modal S</a></li>
@@ -51,7 +51,6 @@
                 <li><a href="">Commercial Energy</a></li>
             </ul>
             
-
             <section class="firstsection">
                 <div class="top">
                     <h1>Model 3</h1>
@@ -69,7 +68,7 @@
                     </div>
                 </div>
             </section>
-
+                
             <section class="secondsection">
                 <div class="top">
                     <h1>Model Y</h1>
@@ -143,24 +142,20 @@
         </main>
 
         <script>
-            function f1()
-            {
-                var ele=document.getElementssByClassName('asidebar');
 
-                for(let i=0; i<ele.length; i++)
-                {
-                    ele[i].style.display='block';
-                }
-            }
-            function f2()
+            function openbar()
             {
-                var ele=document.getElementsByClassName('asidebar');
+                event.preventDefault();
+                var menu = document.getElementById('side');
+                menu.classList.add('active');
 
-                for(let i=0; i<ele.length; i++)
-                {
-                    ele[i].style.display='none';
-                }
             }
-        </script>
+            function closebar()
+            {
+                event.preventDefault();
+                var menu = document.getElementById('side');
+                menu.classList.remove('active');
+            }
+        </script> 
 </body>
 </html>
