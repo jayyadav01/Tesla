@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+html
+{
+    scroll-snap-type: y mandatory;
+}
 header
 {
     width: 100%;
@@ -77,6 +81,7 @@ header li a
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    scroll-snap-align: start;
 }
 .firstsection .top,.secondsection .top,.thirdsection .top,.fourthsection .top,.fifthsection .top,.sixthsection .top,.seventhsection .top
 {
